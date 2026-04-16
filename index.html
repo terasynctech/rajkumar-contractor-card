@@ -23,7 +23,7 @@ body::before {
     position: fixed;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(0,150,255,0.3), transparent);
+    background: radial-gradient(circle, rgba(255,0,0,0.2), transparent);
     top: -100px;
     left: -100px;
     animation: glowMove 8s infinite alternate;
@@ -43,7 +43,7 @@ body::before {
     border-radius: 20px;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(15px);
-    box-shadow: 0 0 30px rgba(0,150,255,0.4);
+    box-shadow: 0 0 30px rgba(255,0,0,0.3);
     animation: fadeIn 1.2s ease;
 }
 
@@ -52,10 +52,13 @@ body::before {
     to { opacity: 1; transform: translateY(0);}
 }
 
-/* LOGO */
+/* LOGO (FIXED) */
 .logo {
-    width: 120px;
-    margin-bottom: 10px;
+    width: 130px;
+    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 12px;
 }
 
 /* NAME */
@@ -70,6 +73,14 @@ p {
     font-size: 14px;
 }
 
+/* DESCRIPTION */
+.desc {
+    margin: 10px 0;
+    font-size: 13px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
 /* BUTTON */
 .btn {
     display: block;
@@ -80,13 +91,13 @@ p {
     text-decoration: none;
     font-weight: bold;
     color: white;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    background: linear-gradient(90deg, #ff4d4d, #cc0000);
     transition: 0.3s;
 }
 
 .btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #00c6ff;
+    box-shadow: 0 0 15px red;
 }
 
 /* SERVICES */
@@ -126,7 +137,14 @@ p {
 <p><b>Government Contractor</b></p>
 <p>General Order Supplier</p>
 
-<p><b>Trusted Work • Quality Service • Timely Delivery</b></p>
+<!-- DESCRIPTION -->
+<p class="desc">
+Raj Kumar Singh is a trusted government contractor and general order supplier in Ranchi, delivering quality construction work, reliable supply services, and timely project execution.
+</p>
+
+<p style="color:#ff4d4d; font-size:13px;">
+✔ Trusted Work | ✔ Quality Service | ✔ On-Time Delivery
+</p>
 
 <!-- BUTTONS -->
 <a class="btn" href="tel:+919430734977">📞 Call Now</a>
